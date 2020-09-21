@@ -16,6 +16,7 @@
 		8C5AF75125139F9C00A39C7C /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AF75025139F9C00A39C7C /* FruitCardView.swift */; };
 		8C5AF7562514214D00A39C7C /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AF7552514214D00A39C7C /* StartButtonView.swift */; };
 		8C5AF759251426BD00A39C7C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AF758251426BD00A39C7C /* OnboardingView.swift */; };
+		8C5FE3902519040400DBB844 /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FE38F2519040400DBB844 /* FruitRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		8C5AF75025139F9C00A39C7C /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
 		8C5AF7552514214D00A39C7C /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 		8C5AF758251426BD00A39C7C /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		8C5FE38F2519040400DBB844 /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				8C5AF75025139F9C00A39C7C /* FruitCardView.swift */,
 				8C5AF7552514214D00A39C7C /* StartButtonView.swift */,
+				8C5FE38F2519040400DBB844 /* FruitRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				8C4521842517AB6B00B5D198 /* FruitData.swift in Sources */,
 				8C5AF75125139F9C00A39C7C /* FruitCardView.swift in Sources */,
+				8C5FE3902519040400DBB844 /* FruitRowView.swift in Sources */,
 				8C5AF7562514214D00A39C7C /* StartButtonView.swift in Sources */,
 				8C5AF73E2513910D00A39C7C /* ContentView.swift in Sources */,
 				8C5AF759251426BD00A39C7C /* OnboardingView.swift in Sources */,
