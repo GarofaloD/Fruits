@@ -7,11 +7,22 @@
 
 import SwiftUI
 
-@main
-struct FructusApp: App {
+@main //Just like in java. Main is for entrypoint
+struct FructusApp: App {  //App protocol API
+    
+    //MARK: - Properties
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true //saving the state on the device storage
+    
+    
+    //MARK: - BODY
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            //Scene switching by working with view actions (StartButtonView(), for example)
+            if isOnboarding {
+                OnboardingView()
+            } else {
+                ContentView()
+            }
         }
     }
 }

@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct StartButtonView: View {
+    
     //MARK: PROPERTIES
+    @AppStorage("isOnboarding") var isOnboarding : Bool? //To manage change on the lifecycle.
+    
     
     //MARK: BODY
     var body: some View {
         Button(action: {
-            print("Exit the onboarding")
+            isOnboarding = false //This will change the scene as described on FructusApp, switching the scene
         }) {
             HStack(spacing: 8) {
                 Text("Start")
