@@ -9,13 +9,14 @@ import SwiftUI
 
 struct OnboardingView: View {
     //MARK: PROPERTIES
+    var fruits : [Fruit] = fruitsData //connecion to data array
     
     //MARK: BODY
     var body: some View {
         TabView{
-            //Cycle the card
-            ForEach(0..<5) { item in
-                FruitCardView()
+            //Cycle the card with the data from the fruits data model
+            ForEach(fruits[0...4]) { item in
+                FruitCardView(fruit: item)
             }//: LOOP
         }//: TABVIEW
         .tabViewStyle(PageTabViewStyle())
@@ -28,6 +29,7 @@ struct OnboardingView: View {
     //MARK: PREVIEW
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        //Previewing from the fruits data model
+        OnboardingView(fruits: fruitsData)
     }
 }
