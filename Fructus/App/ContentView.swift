@@ -17,9 +17,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List{
-                ForEach(fruits.shuffled()){ item in
-                    FruitRowView(fruit: item)
-                        .padding(.vertical, 6)
+                ForEach(fruits){ item in  // we couls use fruits.shuffled() if we want to shuffle
+                    //take us to the detail screen of each fruit
+                    NavigationLink(destination: FruitDetailView(fruit: item)){
+                        FruitRowView(fruit: item)
+                            .padding(.vertical, 6)
+                    }//:navigation link
                 }
             }
             .navigationTitle("Fruits")
