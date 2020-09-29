@@ -39,6 +39,7 @@ struct ContentView: View {
                     }
             )//: NAV BAR ITEMS
         }//:NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
     }//:BODY
 }
     
